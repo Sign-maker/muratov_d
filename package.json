@@ -28,8 +28,13 @@
     "posthtml-include": "^1.7.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "staticFiles": {
-    "staticPath": "src/images",
-    "staticOutPath": "images"
-  }
+  "staticFiles": [
+    {
+      "staticPath": "src/images",
+      "staticOutPath": "images"
+    },
+    {
+      "staticPath": "src/favicon.svg"
+    }
+  ]
 }
