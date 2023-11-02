@@ -6,5 +6,8 @@
     "...",
     "parcel-reporter-clean-dist",
     "parcel-reporter-static-files-copy"
-  ]
+  ],
+  "optimizers": {
+    "*.{jpg,jpeg,png,svg}": []
+  }
 }
