@@ -11,11 +11,22 @@
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/fancybox.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
+    <script type="module" src="./js/index.js" defer></script>
   </head>
   <body data-page-id="main">
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo-link header-logo-link"> DM </a>
+        <div class="logo-lang-wrapper">
+          <a href="./index.html" class="logo-link header-logo-link"> DM </a>
+
+          <select name="lang" id="lang-select">
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+            <option value="uk">UK</option>
+            <option value="ru">RU</option>
+          </select>
+        </div>
+
         <div class="header-nav-wrapper">
           <nav class="nav header-nav">
             <ul class="nav-list header-nav-list">
@@ -23,7 +34,8 @@
                 <a
                   href="#about-me"
                   data-nav-id="0"
-                  class="nav-link header-nav-link menu-link"
+                  data-lang="menu0"
+                  class="nav-link header-nav-link menu-link placeholder"
                   >Kim jestem</a
                 >
               </li>
@@ -31,7 +43,8 @@
                 <a
                   href="#soft-skills"
                   data-nav-id="1"
-                  class="nav-link header-nav-link menu-link"
+                  data-lang="menu1"
+                  class="nav-link header-nav-link menu-link placeholder"
                   >Rozwiązania</a
                 >
               </li>
@@ -39,20 +52,23 @@
                 <a
                   href="#best-projects"
                   data-nav-id="2"
-                  class="nav-link header-nav-link menu-link"
+                  data-lang="menu2"
+                  class="nav-link header-nav-link menu-link placeholder"
                   >Najlepsze projekty<span>&#8249;</span></a
                 >
                 <a
                   href="./best-projects.html"
-                  class="nav-link header-nav-link menu-link"
-                  ><span>&#8250;</span> Galeria projektów</a
+                  data-lang="menu2-sub"
+                  class="nav-link header-nav-link menu-link placeholder"
+                  ><span>&#8250;</span>Galeria projektów</a
                 >
               </li>
               <li class="nav-item header-nav-item">
                 <a
                   href="#hard-skills"
                   data-nav-id="3"
-                  class="nav-link header-nav-link menu-link"
+                  data-lang="menu3"
+                  class="nav-link header-nav-link menu-link placeholder"
                   >Umiejętności</a
                 >
               </li>
@@ -60,13 +76,15 @@
                 <a
                   href="#portfolio"
                   data-nav-id="4"
-                  class="nav-link header-nav-link menu-link"
+                  data-lang="menu4"
+                  class="nav-link header-nav-link menu-link placeholder"
                   >Realizacje<span>&#8249;</span></a
                 >
                 <a
                   href="./portfolio.html"
-                  class="nav-link header-nav-link menu-link"
-                  ><span>&#8250;</span> Galeria realizacji</a
+                  data-lang="menu4-sub"
+                  class="nav-link header-nav-link menu-link placeholder"
+                  ><span>&#8250;</span>Galeria realizacji</a
                 >
               </li>
             </ul>
@@ -163,55 +181,93 @@
               </picture>
             </div>
             <div class="hero-title-wrapper">
-              <h1 class="hero-title">Dmytro<br />Muratov</h1>
-              <h2 class="question hero-question">Kim jestem?</h2>
+              <h1 class="hero-title">
+                <span class="placeholder" data-lang="hero-name">Dmytro</span
+                ><br /><span class="placeholder" data-lang="hero-surname"
+                  >Muratov</span
+                >
+              </h1>
+              <h2
+                class="question hero-question placeholder"
+                data-lang="hero-question"
+              >
+                Kim jestem?
+              </h2>
 
-              <h3 class="hero-profession">
+              <h3
+                class="hero-profession placeholder"
+                data-lang="hero-profession"
+              >
                 Kierownik agencji reklamowej w Ukrainie przed wojną
               </h3>
             </div>
           </div>
 
           <div class="hero-subtitle-wrapper">
-            <p class="hero-ocupation">
+            <p class="hero-ocupation placeholder" data-lang="hero-ocupation">
               Produkcja reklamy zewnętrznej i elewacji wentylowanych
             </p>
             <ul class="futures-list">
               <li class="futures-item">
-                <p class="futures-number" translate="no">20<sup>+</sup></p>
-                <p class="futures-descr">lat<br />doświadczenia</p>
+                <p class="futures-number placeholder" data-lang translate="no">
+                  20<sup>+</sup>
+                </p>
+                <p class="futures-descr placeholder" data-lang>
+                  <span data-lang="hero-futures1-top">lat</span><br /><span
+                    data-lang="hero-futures1-bottom"
+                    >doświadczenia</span
+                  >
+                </p>
               </li>
               <li class="futures-item">
-                <p class="futures-number" translate="no">1000<sup>+</sup></p>
-                <p class="futures-descr">zrealizowanych<br />projektów</p>
+                <p class="futures-number placeholder" data-lang translate="no">
+                  1000<sup>+</sup>
+                </p>
+                <p class="futures-descr placeholder" data-lang>
+                  <span data-lang="hero-futures2-top">zrealizowanych</span
+                  ><br /><span data-lang="hero-futures2-bottom">projektów</span>
+                </p>
               </li>
               <li class="futures-item">
-                <p class="futures-number" translate="no">100%<sup>+</sup></p>
-                <p class="futures-descr">
-                  zrobione super<br />&#9733; &#9733; &#9733; &#9733; &#9733;
+                <p class="futures-number placeholder" data-lang translate="no">
+                  100%<sup>+</sup>
+                </p>
+                <p class="futures-descr placeholder" data-lang>
+                  <span data-lang="hero-futures3-top">zrobione super</span
+                  ><br />&#9733; &#9733; &#9733; &#9733; &#9733;
                 </p>
               </li>
             </ul>
             <ul class="hero-soft-skills-list">
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p>Zarządzałem zespołem</p>
+                <p class="placeholder" data-lang="hero-skill-item1">
+                  Zarządzałem zespołem
+                </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p>Komunikowałem się z klientami</p>
+                <p class="placeholder" data-lang="hero-skill-item2">
+                  Komunikowałem się z klientami
+                </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p>Dotrzymałem ustalonych terminów</p>
+                <p class="placeholder" data-lang="hero-skill-item3">
+                  Dotrzymałem ustalonych terminów
+                </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p>Realizowałem projekty</p>
+                <p class="placeholder" data-lang="hero-skill-item4">
+                  Realizowałem projekty
+                </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p>Organizowałem procesy pracy</p>
+                <p class="placeholder" data-lang="hero-skill-item5">
+                  Organizowałem procesy pracy
+                </p>
               </li>
             </ul>
             <!-- <p class="hero-wishes">
@@ -1667,7 +1723,6 @@
         </svg>
       </div>
     </div>
-
-    <script type="module" src="./js/index.js"></script>
+    <div class="backdrop"><span class="loader"></span></div>
   </body>
 </html>
