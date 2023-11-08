@@ -2,7 +2,7 @@ export const LANG_DATA = {
   main: {
     hero_name: {
       en: 'Dmytro',
-      pl: 'Dymitr',
+      pl: 'Dmytro',
       uk: 'Дмитро',
       ru: 'Дмитрий',
     },
