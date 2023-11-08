@@ -316,8 +316,8 @@ export const LANG_DATA = {
     pf_button: {
       en: 'Show all',
       pl: 'Zobacz wszystkie',
-      uk: 'Показати усе',
-      ru: 'Показать все',
+      uk: 'Подивись усе',
+      ru: 'Посмотри все',
     },
   },
 
@@ -332,8 +332,8 @@ export const LANG_DATA = {
     bpg_title1: {
       en: "The fasade of the plant's administrative building made of aluminum composite panels",
       pl: 'Elewacja budynku administracyjnego fabryki z płyt kompozytowych ACP',
-      uk: 'Фасад адміністративної будівлі заводу з алюмінієвих композитних панелей',
-      ru: 'Фасад административного здания завода из алюминиевых композитных панелей',
+      uk: 'Фасад адмінбудівлі заводу з алюмінієвих композитних панелей',
+      ru: 'Фасад админздания завода из алюминиевых композитных панелей',
     },
 
     bpg_title2: {

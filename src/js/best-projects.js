@@ -34,6 +34,7 @@ const select = new SlimSelect({
     maxValuesMessage: '{number} selected',
   },
 });
+
 commonLangHandler();
 makeCarousels(11);
 navHandler();
