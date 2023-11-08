@@ -450,7 +450,7 @@ export const LANG_DATA = {
     },
 
     pg_button5: {
-      en: 'Showcases',
+      en: 'Windows',
       pl: 'Witryny',
       uk: 'Вітрини',
       ru: 'Витрины',
@@ -471,14 +471,14 @@ export const LANG_DATA = {
     },
 
     pg_button8: {
-      en: 'Signs',
+      en: 'Plaques',
       pl: 'Tablice',
       uk: 'Таблички',
       ru: 'Таблички',
     },
 
     pg_button9: {
-      en: 'Signposts',
+      en: 'Roadside & Arrow',
       pl: 'Znaki',
       uk: 'Вказівники',
       ru: 'Указатели',
