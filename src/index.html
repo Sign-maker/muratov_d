@@ -17,9 +17,9 @@
     <header class="header">
       <div class="container header-container">
         <div class="logo-lang-wrapper">
-          <a href="./index.html" class="logo-link header-logo-link"> DM </a>
+          <a href="./" class="logo-link header-logo-link"> DM </a>
 
-          <select name="lang" id="lang-select">
+          <select name="lang" id="lang-select" class="lang-select">
             <option value="en">EN</option>
             <option value="pl">PL</option>
             <option value="uk">UK</option>
@@ -34,8 +34,8 @@
                 <a
                   href="#about-me"
                   data-nav-id="0"
-                  data-lang="menu0"
                   class="nav-link header-nav-link menu-link placeholder"
+                  data-lang="menu0"
                   >Kim jestem</a
                 >
               </li>
@@ -43,8 +43,8 @@
                 <a
                   href="#soft-skills"
                   data-nav-id="1"
-                  data-lang="menu1"
                   class="nav-link header-nav-link menu-link placeholder"
+                  data-lang="menu1"
                   >Rozwiązania</a
                 >
               </li>
@@ -52,23 +52,26 @@
                 <a
                   href="#best-projects"
                   data-nav-id="2"
-                  data-lang="menu2"
-                  class="nav-link header-nav-link menu-link placeholder"
-                  >Najlepsze projekty<span>&#8249;</span></a
+                  class="nav-link header-nav-link menu-link"
+                  ><span class="placeholder" data-lang="menu2"
+                    >Najlepsze projekty</span
+                  ><span>&#8249;</span></a
                 >
                 <a
                   href="./best-projects.html"
-                  data-lang="menu2-sub"
-                  class="nav-link header-nav-link menu-link placeholder"
-                  ><span>&#8250;</span>Galeria projektów</a
+                  class="nav-link header-nav-link menu-link"
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu2_sub"
+                    >Galeria projektów</span
+                  ></a
                 >
               </li>
               <li class="nav-item header-nav-item">
                 <a
                   href="#hard-skills"
                   data-nav-id="3"
-                  data-lang="menu3"
                   class="nav-link header-nav-link menu-link placeholder"
+                  data-lang="menu3"
                   >Umiejętności</a
                 >
               </li>
@@ -76,15 +79,17 @@
                 <a
                   href="#portfolio"
                   data-nav-id="4"
-                  data-lang="menu4"
-                  class="nav-link header-nav-link menu-link placeholder"
-                  >Realizacje<span>&#8249;</span></a
+                  class="nav-link header-nav-link menu-link"
+                  ><span class="placeholder" data-lang="menu4">Realizacje</span
+                  ><span>&#8249;</span></a
                 >
                 <a
                   href="./portfolio.html"
-                  data-lang="menu4-sub"
-                  class="nav-link header-nav-link menu-link placeholder"
-                  ><span>&#8250;</span>Galeria realizacji</a
+                  class="nav-link header-nav-link menu-link"
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu4_sub"
+                    >Galeria realizacji</span
+                  ></a
                 >
               </li>
             </ul>
@@ -94,14 +99,16 @@
               <li class="addres-item header-addres-item">
                 <a
                   href="mailto:muratovdv76@gmail.com"
-                  class="address-link header-addres-link menu-link"
+                  class="address-link header-addres-link menu-link placeholder"
+                  data-lang="email"
                   >muratovdv76@gmail.com</a
                 >
               </li>
               <li class="addres-item header-addres-item">
                 <a
                   href="tel:+48572112582"
-                  class="address-link header-addres-link menu-link"
+                  class="address-link header-addres-link menu-link placeholder"
+                  data-lang="tel"
                   >+48 572 112 582</a
                 >
               </li>
@@ -182,21 +189,21 @@
             </div>
             <div class="hero-title-wrapper">
               <h1 class="hero-title">
-                <span class="placeholder" data-lang="hero-name">Dmytro</span
-                ><br /><span class="placeholder" data-lang="hero-surname"
+                <span class="placeholder" data-lang="hero_name">Dmytro</span
+                ><br /><span class="placeholder" data-lang="hero_surname"
                   >Muratov</span
                 >
               </h1>
               <h2
                 class="question hero-question placeholder"
-                data-lang="hero-question"
+                data-lang="hero_question"
               >
                 Kim jestem?
               </h2>
 
               <h3
                 class="hero-profession placeholder"
-                data-lang="hero-profession"
+                data-lang="hero_profession"
               >
                 Kierownik agencji reklamowej w Ukrainie przed wojną
               </h3>
@@ -204,7 +211,7 @@
           </div>
 
           <div class="hero-subtitle-wrapper">
-            <p class="hero-ocupation placeholder" data-lang="hero-ocupation">
+            <p class="hero-ocupation placeholder" data-lang="hero_ocupation">
               Produkcja reklamy zewnętrznej i elewacji wentylowanych
             </p>
             <ul class="futures-list">
@@ -213,8 +220,8 @@
                   20<sup>+</sup>
                 </p>
                 <p class="futures-descr placeholder" data-lang>
-                  <span data-lang="hero-futures1-top">lat</span><br /><span
-                    data-lang="hero-futures1-bottom"
+                  <span data-lang="hero_futures1_top">lat</span><br /><span
+                    data-lang="hero_futures1_bottom"
                     >doświadczenia</span
                   >
                 </p>
@@ -224,8 +231,8 @@
                   1000<sup>+</sup>
                 </p>
                 <p class="futures-descr placeholder" data-lang>
-                  <span data-lang="hero-futures2-top">zrealizowanych</span
-                  ><br /><span data-lang="hero-futures2-bottom">projektów</span>
+                  <span data-lang="hero_futures2_top">zrealizowanych</span
+                  ><br /><span data-lang="hero_futures2_bottom">projektów</span>
                 </p>
               </li>
               <li class="futures-item">
@@ -233,7 +240,7 @@
                   100%<sup>+</sup>
                 </p>
                 <p class="futures-descr placeholder" data-lang>
-                  <span data-lang="hero-futures3-top">zrobione super</span
+                  <span data-lang="hero_futures3_top">zrobione super</span
                   ><br />&#9733; &#9733; &#9733; &#9733; &#9733;
                 </p>
               </li>
@@ -241,31 +248,31 @@
             <ul class="hero-soft-skills-list">
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p class="placeholder" data-lang="hero-skill-item1">
+                <p class="placeholder" data-lang="hero_skill_item1">
                   Zarządzałem zespołem
                 </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p class="placeholder" data-lang="hero-skill-item2">
+                <p class="placeholder" data-lang="hero_skill_item2">
                   Komunikowałem się z klientami
                 </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p class="placeholder" data-lang="hero-skill-item3">
+                <p class="placeholder" data-lang="hero_skill_item3">
                   Dotrzymałem ustalonych terminów
                 </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p class="placeholder" data-lang="hero-skill-item4">
+                <p class="placeholder" data-lang="hero_skill_item4">
                   Realizowałem projekty
                 </p>
               </li>
               <li class="hero-soft-skils-item">
                 <span>&#9745;</span>
-                <p class="placeholder" data-lang="hero-skill-item5">
+                <p class="placeholder" data-lang="hero_skill_item5">
                   Organizowałem procesy pracy
                 </p>
               </li>
@@ -280,11 +287,14 @@
 
       <section class="soft-skills-section" data-section-id="1" id="soft-skills">
         <div class="container skills-container">
-          <h2 class="question skills-question">
+          <h2
+            class="question skills-question placeholder"
+            data-lang="ss_question"
+          >
             Jakie zadania mogę wykonywać?
           </h2>
           <div class="skills-box">
-            <h3 class="skills-title">
+            <h3 class="skills-title placeholder" data-lang="ss_title">
               Kompleksowe rozwiązania dla reklamy zewnętrznej i elewacji
               wentylowanych
             </h3>
@@ -293,7 +303,10 @@
                 <svg width="100" height="100">
                   <use href="./images/svg/icons.svg#communication" />
                 </svg>
-                <h4 class="skill-name soft-skill-name">
+                <h4
+                  class="skill-name soft-skill-name placeholder"
+                  data-lang="ss_item0"
+                >
                   Komunikacja z klientem
                 </h4>
               </li>
@@ -301,25 +314,43 @@
                 <svg width="100" height="100">
                   <use href="./images/svg/icons.svg#measure" />
                 </svg>
-                <h4 class="skill-name soft-skill-name">Wykonywanie pomiarów</h4>
+                <h4
+                  class="skill-name soft-skill-name placeholder"
+                  data-lang="ss_item1"
+                >
+                  Wykonywanie pomiarów
+                </h4>
               </li>
               <li class="skills-item soft-skills-item">
                 <svg width="100" height="100">
                   <use href="./images/svg/icons.svg#project" />
                 </svg>
-                <h4 class="skill-name soft-skill-name">Rozwój projektu</h4>
+                <h4
+                  class="skill-name soft-skill-name placeholder"
+                  data-lang="ss_item2"
+                >
+                  Rozwój projektu
+                </h4>
               </li>
               <li class="skills-item soft-skills-item">
                 <svg width="100" height="100">
                   <use href="./images/svg/icons.svg#calculation" />
                 </svg>
-                <h4 class="skill-name soft-skill-name">Wycena</h4>
+                <h4
+                  class="skill-name soft-skill-name placeholder"
+                  data-lang="ss_item3"
+                >
+                  Wycena
+                </h4>
               </li>
               <li class="skills-item soft-skills-item">
                 <svg width="100" height="100">
                   <use href="./images/svg/icons.svg#working-process" />
                 </svg>
-                <h4 class="skill-name soft-skill-name">
+                <h4
+                  class="skill-name soft-skill-name placeholder"
+                  data-lang="ss_item4"
+                >
                   Kontrola procesu produkcyjnego
                 </h4>
               </li>
@@ -327,7 +358,12 @@
                 <svg width="100" height="100">
                   <use href="./images/svg/icons.svg#installation" />
                 </svg>
-                <h4 class="skill-name soft-skill-name">Kontrola instalacji</h4>
+                <h4
+                  class="skill-name soft-skill-name placeholder"
+                  data-lang="ss_item5"
+                >
+                  Kontrola instalacji
+                </h4>
               </li>
             </ul>
           </div>
@@ -340,7 +376,10 @@
         id="best-projects"
       >
         <div class="container best-projects-container">
-          <h3 class="skills-title best-project-title">
+          <h3
+            class="skills-title best-project-title placeholder"
+            data-lang="bp_title"
+          >
             Najlepsze zrealizowane projekty
           </h3>
 
@@ -703,20 +742,28 @@
               </div>
             </div>
           </div>
-          <a href="./best-projects.html" class="btn-more">Zobacz dokładniej</a>
+          <a
+            href="./best-projects.html"
+            class="btn-more placeholder"
+            data-lang="bp_button"
+            >Zobacz dokładniej</a
+          >
         </div>
       </section>
 
       <section class="hard-skills-section" data-section-id="3" id="hard-skills">
         <div class="container skills-container">
-          <h2 class="question skills-question">
+          <h2
+            class="question skills-question placeholder"
+            data-lang="hs_question"
+          >
             Jakie umiejętności techniczne opanowałem?
           </h2>
           <div
             class="skills-box hard-skills-box"
             id="hard-skills-projects-gallary"
           >
-            <h3 class="skills-title">
+            <h3 class="skills-title placeholder" data-lang="hs_title_3d">
               Projektowanie graficzne, 3D-wizualizacja
             </h3>
             <ul class="skills-list hard-skills-list">
@@ -751,7 +798,10 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name1_3d"
+                >
                   Elewacje galerii handlowych, sklepów, biur
                 </h4>
               </li>
@@ -787,7 +837,10 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name2_3d"
+                >
                   Reklama zewnętrzna<br />Litery, kasetony, szyldy
                 </h4>
               </li>
@@ -822,7 +875,12 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">Reklama wewnętrzna</h4>
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name3_3d"
+                >
+                  Reklama wewnętrzna
+                </h4>
               </li>
               <li class="skills-item hard-skills-item">
                 <div class="skill-image proportion-type1">
@@ -855,7 +913,10 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name4_3d"
+                >
                   Konstrukcje montażowe
                 </h4>
               </li>
@@ -890,7 +951,12 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">Grafika na pojazdach</h4>
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name5_3d"
+                >
+                  Grafika na pojazdach
+                </h4>
               </li>
               <li class="skills-item hard-skills-item">
                 <div class="skill-image proportion-type1">
@@ -923,7 +989,10 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name6_3d"
+                >
                   Dokumentacja techniczna
                 </h4>
               </li>
@@ -934,7 +1003,9 @@
             class="skills-box hard-skills-box"
             id="hard-skills-equipment-gallary"
           >
-            <h3 class="skills-title">Praca jako operator sprzętu</h3>
+            <h3 class="skills-title placeholder" data-lang="hs_title_Eq">
+              Praca jako operator sprzętu
+            </h3>
             <ul class="skills-list hard-skills-list">
               <li class="skills-item hard-skills-item equipment-item">
                 <div class="skill-image proportion-type1">
@@ -967,7 +1038,10 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name1_Eq"
+                >
                   Drukarki wielkoformatowe
                 </h4>
               </li>
@@ -1003,7 +1077,12 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">Plotery tnące</h4>
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name2_Eq"
+                >
+                  Plotery tnące
+                </h4>
               </li>
 
               <li class="skills-item hard-skills-item equipment-item">
@@ -1037,7 +1116,12 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">Frezarki CNC</h4>
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name3_Eq"
+                >
+                  Frezarki CNC
+                </h4>
               </li>
               <li class="skills-item hard-skills-item equipment-item">
                 <div class="skill-image proportion-type1">
@@ -1070,7 +1154,12 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">Maszyny laserowe CNC</h4>
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name4_Eq"
+                >
+                  Maszyny laserowe CNC
+                </h4>
               </li>
             </ul>
           </div>
@@ -1079,7 +1168,7 @@
             class="skills-box hard-skills-box"
             id="hard-skills-electro-gallary"
           >
-            <h3 class="skills-title">
+            <h3 class="skills-title placeholder" data-lang="hs_title_El">
               Obliczanie i montaż bloków elektrycznych
             </h3>
             <ul class="skills-list hard-skills-list electro-list">
@@ -1114,7 +1203,10 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name1_El"
+                >
                   Elementy oświetlenia LED do reklamy zewnętrznej
                 </h4>
               </li>
@@ -1150,7 +1242,10 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name2_El"
+                >
                   Wyświetlacze LED, ekrany. Programowanie
                 </h4>
               </li>
@@ -1161,7 +1256,9 @@
             class="skills-box hard-skills-box"
             id="hard-skills-color-gallary"
           >
-            <h3 class="skills-title">Profilowanie kolorów X-rite i1</h3>
+            <h3 class="skills-title placeholder" data-lang="hs_title_Pr">
+              Profilowanie kolorów X-rite i1
+            </h3>
             <ul class="skills-list hard-skills-list color-correction-list">
               <li class="skills-item hard-skills-item color-corection-item">
                 <div class="skill-image proportion-type1">
@@ -1194,7 +1291,12 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">Monitorów</h4>
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name1_Pr"
+                >
+                  Monitorów
+                </h4>
               </li>
 
               <li class="skills-item hard-skills-item color-corection-item">
@@ -1228,7 +1330,12 @@
                     </picture>
                   </a>
                 </div>
-                <h4 class="skill-name hard-skill-name">Drukarek</h4>
+                <h4
+                  class="skill-name hard-skill-name placeholder"
+                  data-lang="hs_name2_Pr"
+                >
+                  Drukarek
+                </h4>
               </li>
             </ul>
           </div>
@@ -1237,7 +1344,12 @@
 
       <section class="portfolio-section" data-section-id="4" id="portfolio">
         <div class="container portfolio-container">
-          <h3 class="skills-title portfolio-title">Realizacje</h3>
+          <h3
+            class="skills-title portfolio-title placeholder"
+            data-lang="pf_title"
+          >
+            Realizacje
+          </h3>
 
           <div id="portfolio-gallery">
             <div class="f-carousel" id="portfolio-carousel">
@@ -1647,48 +1759,74 @@
               </div>
             </div>
           </div>
-          <a href="./portfolio.html" class="btn-more">Zobacz wszystkie</a>
+          <a
+            href="./portfolio.html"
+            class="btn-more placeholder"
+            data-lang="pf_button"
+            >Zobacz wszystkie</a
+          >
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footer-container">
-        <a href="./index.html" class="logo-link footer-logo-link"> DM </a>
+        <a href="./" class="logo-link footer-logo-link"> DM </a>
         <div class="footer-nav-wrapper">
           <nav class="nav footer-nav">
             <ul class="nav-list footer-nav-list">
               <li class="nav-item footer-nav-item">
-                <a href="#about-me" class="nav-link footer-nav-link"
+                <a
+                  href="#about-me"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu0"
                   >Kim jestem</a
                 >
               </li>
               <li class="nav-item footer-nav-item">
-                <a href="#soft-skills" class="nav-link footer-nav-link"
+                <a
+                  href="#soft-skills"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu1"
                   >Rozwiązania</a
                 >
               </li>
 
               <li class="nav-item footer-nav-item ext-item">
-                <a href="#best-projects" class="nav-link footer-nav-link"
+                <a
+                  href="#best-projects"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu2"
                   >Najlepsze projekty</a
                 >
                 <a href="./best-projects.html" class="nav-link footer-nav-link"
-                  ><span>&#8250;</span> Galeria projektów</a
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu2_sub"
+                    >Galeria projektów</span
+                  ></a
                 >
               </li>
               <li class="nav-item footer-nav-item">
-                <a href="#hard-skills" class="nav-link footer-nav-link"
+                <a
+                  href="#hard-skills"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu3"
                   >Umiejętności</a
                 >
               </li>
 
               <li class="nav-item footer-nav-item ext-item">
-                <a href="#portfolio" class="nav-link footer-nav-link"
+                <a
+                  href="#portfolio"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu4"
                   >Realizacje</a
                 >
                 <a href="./portfolio.html" class="nav-link footer-nav-link"
-                  ><span>&#8250;</span> Galeria realizacji</a
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu4_sub"
+                    >Galeria realizacji</span
+                  ></a
                 >
               </li>
             </ul>
@@ -1698,14 +1836,16 @@
               <li class="addres-item footer-addres-item">
                 <a
                   href="mailto:muratovdv76@gmail.com"
-                  class="address-link footer-addres-link"
+                  class="address-link footer-addres-link placeholder"
+                  data-lang="email"
                   >muratovdv76@gmail.com</a
                 >
               </li>
               <li class="addres-item footer-addres-item">
                 <a
                   href="tel:+48572112582"
-                  class="address-link footer-addres-link"
+                  class="address-link footer-addres-link placeholder"
+                  data-lang="tel"
                   >+48 572 112 582</a
                 >
               </li>

@@ -53,26 +53,20 @@ export class LanguageHandler {
     htmlLangSet(lang);
 
     langElems.forEach(langEl => {
-      // добавить проверок
-      // if (LANG_DATA[pageId][langEl.dataset.lang][lang]) {
-      //   langEl.textContent = LANG_DATA[pageId][langEl.dataset.lang][lang];
-      // }
-      // if (!LANG_DATA[pageId]) {
-      //   return;
-      // } else if (!LANG_DATA[pageId][langEl.dataset.lang]) {
-      //   return;
-      // } else if (!LANG_DATA[pageId][langEl.dataset.lang][lang]) {
-      //   return;
-      // }
-      try {
-        const content = LANG_DATA[pageId][langEl.dataset.lang][lang];
-        if (content) {
-          langEl.textContent = content;
+      if (
+        !LANG_DATA.hasOwnProperty(pageId) ||
+        !LANG_DATA[pageId].hasOwnProperty(langEl.dataset.lang) ||
+        !LANG_DATA[pageId][langEl.dataset.lang].hasOwnProperty(lang) ||
+        !LANG_DATA[pageId][langEl.dataset.lang][lang]
+      ) {
+        if (langEl.classList.contains('placeholder')) {
           showLangEl(langEl);
         }
-      } catch {
-        showLangEl(langEl);
+        return;
       }
+      const content = LANG_DATA[pageId][langEl.dataset.lang][lang];
+      langEl.textContent = content;
+      showLangEl(langEl);
     });
 
     function showLangEl(langEl) {

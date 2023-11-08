@@ -316,7 +316,7 @@
     justify-content: space-between;
     align-items: baseline;
   }
-  .header-nav-item.ext-item a:first-child span {
+  .header-nav-item.ext-item a:first-child span + span {
     writing-mode: vertical-lr;
     display: block;
   }
@@ -473,7 +473,7 @@
     font-size: 13px;
     /* line-height: 2.4; */
   }
-  .ext-item a:first-child span {
+  .ext-item a:first-child span + span {
     display: none;
   }
   .nav-link {

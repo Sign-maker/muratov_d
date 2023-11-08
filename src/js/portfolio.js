@@ -1,3 +1,5 @@
+import { LANG_DATA, LANG_MENU } from './lang-data.js';
+import { LanguageHandler } from './language-functions.js';
 import { portfolioGalleryItems, paths } from './portfolio-items.js';
 import { categories } from './porfolio-categories.js';
 import { destroyFancybox, bindFancybox } from './fancybox-functions.js';
@@ -30,6 +32,7 @@ let currentCategoryId =
   localStorage.getItem(CURRENT_PORTFOLIO_CATEGORY_ID) ?? ALL_CATEGORY_ID;
 
 filterButtonsMarkup(categories);
+commonLangHandler();
 changeBtnState(currentCategoryId, ACTIVE_STATE);
 galleryMarkup(portfolioGalleryItems);
 const galleryItemsRef = document.querySelectorAll(
@@ -40,16 +43,46 @@ buttonsListRef.addEventListener('click', onBtnClick);
 navHandler();
 goTopBtnHandler();
 
+function commonLangHandler() {
+  const langElems = document.querySelectorAll('[data-lang]');
+  const backdropEl = document.querySelector('.backdrop');
+  const langSelectorEl = document.querySelector('#lang-select');
+
+  langSelectorEl.addEventListener('change', onSelChange);
+
+  const pageId = document.body.dataset.pageId;
+  LANG_DATA[pageId] = { ...LANG_DATA[pageId], ...LANG_MENU };
+
+  const langHandler = new LanguageHandler(langElems, LANG_DATA);
+
+  langHandler.init();
+  markItemInSelector(langSelectorEl, langHandler.language);
+  hideBackdrop(backdropEl);
+
+  function onSelChange(evt) {
+    langHandler.language = evt.target.value;
+    langHandler.applyLangToDocument();
+  }
+
+  function markItemInSelector(langSelectorEl, lang) {
+    langSelectorEl.value = lang;
+  }
+
+  function hideBackdrop(backdropEl) {
+    backdropEl.classList.add('is-hidden');
+  }
+}
 function filterButtonsMarkup(categories) {
   const markup = categories
     .map(
-      category => `<li class="portfolio-filter-item">
+      (category, idx) => `<li class="portfolio-filter-item">
               <button
                 type="button"
                 class="btn filter-btn"
                 data-category-id="${category.categoryId}"
               >
-                ${category.categoryName}
+                <span class="placeholder"
+                data-lang="pg_button${idx}">${category.categoryName}</span>
               </button>
             </li>`
     )

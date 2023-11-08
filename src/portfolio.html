@@ -10,57 +10,84 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/fancybox.css" />
+    <script type="module" src="./js/portfolio.js" defer></script>
   </head>
-  <body>
+  <body data-page-id="portfolio">
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo-link header-logo-link"> DM </a>
+        <div class="logo-lang-wrapper">
+          <a href="./" class="logo-link header-logo-link"> DM </a>
+
+          <select name="lang" id="lang-select">
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+            <option value="uk">UK</option>
+            <option value="ru">RU</option>
+          </select>
+        </div>
         <div class="header-nav-wrapper">
           <nav class="nav header-nav">
             <ul class="nav-list header-nav-list">
-              <li class="nav-item header-nav-item about-me">
+              <li class="nav-item header-nav-item">
                 <a
-                  href="./index.html#about-me"
-                  class="nav-link header-nav-link menu-link"
+                  href="./#about-me"
+                  data-nav-id="0"
+                  class="nav-link header-nav-link menu-link placeholder"
+                  data-lang="menu0"
                   >Kim jestem</a
                 >
               </li>
               <li class="nav-item header-nav-item">
                 <a
-                  href="./index.html#soft-skills"
-                  class="nav-link header-nav-link menu-link"
+                  href="./#soft-skills"
+                  data-nav-id="1"
+                  class="nav-link header-nav-link menu-link placeholder"
+                  data-lang="menu1"
                   >Rozwiązania</a
                 >
               </li>
               <li class="nav-item header-nav-item ext-item">
                 <a
-                  href="./index.html#best-projects"
+                  href="./#best-projects"
+                  data-nav-id="2"
                   class="nav-link header-nav-link menu-link"
-                  >Najlepsze projekty<span>&#8249;</span></a
+                  ><span class="placeholder" data-lang="menu2"
+                    >Najlepsze projekty</span
+                  ><span>&#8249;</span></a
                 >
                 <a
                   href="./best-projects.html"
                   class="nav-link header-nav-link menu-link"
-                  ><span>&#8250;</span> Galeria projektów</a
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu2_sub"
+                    >Galeria projektów</span
+                  ></a
                 >
               </li>
               <li class="nav-item header-nav-item">
                 <a
-                  href="./index.html#hard-skills"
-                  class="nav-link header-nav-link menu-link"
+                  href="./#hard-skills"
+                  data-nav-id="3"
+                  class="nav-link header-nav-link menu-link placeholder"
+                  data-lang="menu3"
                   >Umiejętności</a
                 >
               </li>
               <li class="nav-item header-nav-item ext-item">
                 <a
-                  href="./index.html#portfolio"
+                  href="./#portfolio"
+                  data-nav-id="4"
                   class="nav-link header-nav-link menu-link"
-                  >Realizacje<span>&#8249;</span></a
+                  ><span class="placeholder" data-lang="menu4">Realizacje</span
+                  ><span>&#8249;</span></a
                 >
                 <a
                   href="#"
                   class="nav-link header-nav-link menu-link active-link-gallery"
-                  ><span>&#8250;</span> Galeria realizacji</a
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu4_sub"
+                    >Galeria realizacji</span
+                  ></a
                 >
               </li>
             </ul>
@@ -70,14 +97,16 @@
               <li class="addres-item header-addres-item">
                 <a
                   href="mailto:muratovdv76@gmail.com"
-                  class="address-link header-addres-link menu-link"
+                  class="address-link header-addres-link menu-link placeholder"
+                  data-lang="email"
                   >muratovdv76@gmail.com</a
                 >
               </li>
               <li class="addres-item header-addres-item">
                 <a
                   href="tel:+48572112582"
-                  class="address-link header-addres-link menu-link"
+                  class="address-link header-addres-link menu-link placeholder"
+                  data-lang="tel"
                   >+48 572 112 582</a
                 >
               </li>
@@ -96,7 +125,10 @@
     <main>
       <section class="portfolio-page-section">
         <div class="container portfolio-page-container">
-          <h2 class="question skills-question portfolio-page-question">
+          <h2
+            class="question skills-question portfolio-page-question placeholder"
+            data-lang="pg_question"
+          >
             Galeria realizacji
           </h2>
           <ul class="portfolio-filter-list" id="filterBtnContainer"></ul>
@@ -107,49 +139,62 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <a href="./index.html" class="logo-link footer-logo-link"> DM </a>
+        <a href="./" class="logo-link footer-logo-link"> DM </a>
         <div class="footer-nav-wrapper">
           <nav class="nav footer-nav">
             <ul class="nav-list footer-nav-list">
               <li class="nav-item footer-nav-item">
-                <a href="./index.html#about-me" class="nav-link footer-nav-link"
+                <a
+                  href="./#about-me"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu0"
                   >Kim jestem</a
                 >
               </li>
               <li class="nav-item footer-nav-item">
                 <a
-                  href="./index.html#soft-skills"
-                  class="nav-link footer-nav-link"
+                  href="./#soft-skills"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu1"
                   >Rozwiązania</a
                 >
               </li>
 
               <li class="nav-item footer-nav-item ext-item">
                 <a
-                  href="./index.html#best-projects"
-                  class="nav-link footer-nav-link"
+                  href="./#best-projects"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu2"
                   >Najlepsze projekty</a
                 >
                 <a href="./best-projects.html" class="nav-link footer-nav-link"
-                  ><span>&#8250;</span> Galeria projektów</a
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu2_sub"
+                    >Galeria projektów</span
+                  ></a
                 >
               </li>
               <li class="nav-item footer-nav-item">
                 <a
-                  href="./index.html#hard-skills"
-                  class="nav-link footer-nav-link"
+                  href="./#hard-skills"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu3"
                   >Umiejętności</a
                 >
               </li>
 
               <li class="nav-item footer-nav-item ext-item">
                 <a
-                  href="./index.html#portfolio"
-                  class="nav-link footer-nav-link"
+                  href="./#portfolio"
+                  class="nav-link footer-nav-link placeholder"
+                  data-lang="menu4"
                   >Realizacje</a
                 >
                 <a href="#" class="nav-link footer-nav-link"
-                  ><span>&#8250;</span> Galeria realizacji</a
+                  ><span>&#8250; </span
+                  ><span class="placeholder" data-lang="menu4_sub"
+                    >Galeria realizacji</span
+                  ></a
                 >
               </li>
             </ul>
@@ -159,14 +204,16 @@
               <li class="addres-item footer-addres-item">
                 <a
                   href="mailto:muratovdv76@gmail.com"
-                  class="address-link footer-addres-link"
+                  class="address-link footer-addres-link placeholder"
+                  data-lang="email"
                   >muratovdv76@gmail.com</a
                 >
               </li>
               <li class="addres-item footer-addres-item">
                 <a
                   href="tel:+48572112582"
-                  class="address-link footer-addres-link"
+                  class="address-link footer-addres-link placeholder"
+                  data-lang="tel"
                   >+48 572 112 582</a
                 >
               </li>
@@ -185,6 +232,6 @@
       </div>
     </div>
 
-    <script type="module" src="./js/portfolio.js"></script>
+    <div class="backdrop"><span class="loader"></span></div>
   </body>
 </html>
