@@ -5,6 +5,8 @@ import { categories } from './porfolio-categories.js';
 import { destroyFancybox, bindFancybox } from './fancybox-functions.js';
 import { navHandler } from './nav-functions.js';
 import { goTopBtnHandler } from './go-top-btn.js';
+import SlimSelect from 'slim-select';
+import 'slim-select/dist/slimselect.css';
 
 const {
   jpegBigPath,
@@ -30,6 +32,34 @@ const ALL_CATEGORY_ID = categories[0].categoryId;
 
 let currentCategoryId =
   localStorage.getItem(CURRENT_PORTFOLIO_CATEGORY_ID) ?? ALL_CATEGORY_ID;
+
+const select = new SlimSelect({
+  select: '#lang-select',
+  settings: {
+    // Below are a list of optional fields
+    // their values are the defaults
+    disabled: false,
+    alwaysOpen: false,
+    showSearch: false,
+    searchPlaceholder: 'Search',
+    searchText: 'No Results',
+    searchingText: 'Searching...',
+    searchHighlight: false,
+    closeOnSelect: true,
+    contentLocation: document.body,
+    contentPosition: 'absolute',
+    openPosition: 'auto', // options: auto, up, down
+    placeholderText: 'Select Value',
+    allowDeselect: false,
+    hideSelected: false,
+    showOptionTooltips: false,
+    minSelected: 0,
+    maxSelected: 1000,
+    timeoutDelay: 200,
+    maxValuesShown: 20,
+    maxValuesMessage: '{number} selected',
+  },
+});
 
 filterButtonsMarkup(categories);
 commonLangHandler();
@@ -66,6 +96,7 @@ function commonLangHandler() {
 
   function markItemInSelector(langSelectorEl, lang) {
     langSelectorEl.value = lang;
+    select.setSelected(lang);
   }
 
   function hideBackdrop(backdropEl) {

@@ -17,7 +17,7 @@ import 'slim-select/dist/slimselect.css';
 // document.addEventListener('DOMContentLoaded', event => {
 //   console.log('DOMContentLoaded\n');
 // });
-new SlimSelect({
+const select = new SlimSelect({
   select: '#lang-select',
   settings: {
     // Below are a list of optional fields
@@ -74,6 +74,7 @@ function commonLangHandler() {
 
   function markItemInSelector(langSelectorEl, lang) {
     langSelectorEl.value = lang;
+    select.setSelected(lang);
   }
 
   function hideBackdrop(backdropEl) {
