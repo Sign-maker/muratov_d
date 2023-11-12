@@ -79,7 +79,7 @@ export const LANG_DATA = {
       en: 'Communicated with clients',
       pl: 'Komunikowałem się z klientami',
       uk: 'Комунікував з клієнтами',
-      ru: 'Коммуницировал с клиентами',
+      ru: 'Взаимодействовал с клиентами',
     },
 
     hero_skill_item3: {
@@ -330,7 +330,7 @@ export const LANG_DATA = {
     },
 
     bpg_title1: {
-      en: "The fasade of the plant's administrative building made of aluminum composite panels",
+      en: 'Ventilated facade of the factory administration building made of aluminum composite panels',
       pl: 'Elewacja budynku administracyjnego fabryki z płyt kompozytowych ACP',
       uk: 'Фасад адмінбудівлі заводу з алюмінієвих композитних панелей',
       ru: 'Фасад админздания завода из алюминиевых композитных панелей',
