@@ -84,7 +84,7 @@ export const LANG_DATA = {
 
     hero_skill_item3: {
       en: 'Sticked to deadlines',
-      pl: 'Dotrzymałem ustalonych terminów',
+      pl: 'Dotrzymywałem ustalonych terminów',
       uk: 'Дотримувався дедлайнів',
       ru: 'Придерживался дедлайнов',
     },
